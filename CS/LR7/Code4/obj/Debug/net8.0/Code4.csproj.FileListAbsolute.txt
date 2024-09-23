@@ -1,0 +1,14 @@
+D:\College\CS\LR7\Code4\bin\Debug\net8.0\Code4.exe
+D:\College\CS\LR7\Code4\bin\Debug\net8.0\Code4.deps.json
+D:\College\CS\LR7\Code4\bin\Debug\net8.0\Code4.runtimeconfig.json
+D:\College\CS\LR7\Code4\bin\Debug\net8.0\Code4.dll
+D:\College\CS\LR7\Code4\bin\Debug\net8.0\Code4.pdb
+D:\College\CS\LR7\Code4\obj\Debug\net8.0\Code4.GeneratedMSBuildEditorConfig.editorconfig
+D:\College\CS\LR7\Code4\obj\Debug\net8.0\Code4.AssemblyInfoInputs.cache
+D:\College\CS\LR7\Code4\obj\Debug\net8.0\Code4.AssemblyInfo.cs
+D:\College\CS\LR7\Code4\obj\Debug\net8.0\Code4.csproj.CoreCompileInputs.cache
+D:\College\CS\LR7\Code4\obj\Debug\net8.0\Code4.dll
+D:\College\CS\LR7\Code4\obj\Debug\net8.0\refint\Code4.dll
+D:\College\CS\LR7\Code4\obj\Debug\net8.0\Code4.pdb
+D:\College\CS\LR7\Code4\obj\Debug\net8.0\Code4.genruntimeconfig.cache
+D:\College\CS\LR7\Code4\obj\Debug\net8.0\ref\Code4.dll
