@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Administrator\\Documents\\GitHub\\College\\CS\\LR9\\Code\\Code.csproj": {}
+    "C:\\Users\\312-12\\Documents\\GitHub\\College\\CS\\LR9\\Code\\Code.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Administrator\\Documents\\GitHub\\College\\CS\\LR9\\Code\\Code.csproj": {
+    "C:\\Users\\312-12\\Documents\\GitHub\\College\\CS\\LR9\\Code\\Code.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Administrator\\Documents\\GitHub\\College\\CS\\LR9\\Code\\Code.csproj",
+        "projectUniqueName": "C:\\Users\\312-12\\Documents\\GitHub\\College\\CS\\LR9\\Code\\Code.csproj",
         "projectName": "Code",
-        "projectPath": "C:\\Users\\Administrator\\Documents\\GitHub\\College\\CS\\LR9\\Code\\Code.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Administrator\\Documents\\GitHub\\College\\CS\\LR9\\Code\\obj\\",
+        "projectPath": "C:\\Users\\312-12\\Documents\\GitHub\\College\\CS\\LR9\\Code\\Code.csproj",
+        "packagesPath": "C:\\Users\\312-12\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\312-12\\Documents\\GitHub\\College\\CS\\LR9\\Code\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\312-12\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -43,6 +43,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "BetterConsoleTables": {
+              "target": "Package",
+              "version": "[2.0.5-rc1, )"
+            },
             "Microsoft.Data.Sqlite": {
               "target": "Package",
               "version": "[8.0.8, )"
@@ -64,7 +68,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.206/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.402/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
