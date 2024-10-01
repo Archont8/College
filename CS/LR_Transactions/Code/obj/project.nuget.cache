@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/HSc1npCNn/vu0/aMXlsy6fhXFtzUt23MqLiGrXI5uM0xCmlAka6tQ6bcvdm/luSKlnmelpsKfKcJt/ORhpbdw==",
+  "dgSpecHash": "fg9md6/J+FDmKAtbWAIT3q31XV8C3Q9hjRwXe/W/fG8o4iujLfVioYnFgj3F6fjBgljmGIN8ZfJor30JxGRniw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Администратор\\Documents\\GitHub\\College\\LR_Transactions\\Code\\Code.csproj",
+  "projectFilePath": "C:\\Users\\Администратор\\Documents\\GitHub\\College\\CS\\LR_Transactions\\Code\\Code.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Администратор\\.nuget\\packages\\microsoft.data.sqlite\\8.0.8\\microsoft.data.sqlite.8.0.8.nupkg.sha512",
     "C:\\Users\\Администратор\\.nuget\\packages\\microsoft.data.sqlite.core\\8.0.8\\microsoft.data.sqlite.core.8.0.8.nupkg.sha512",

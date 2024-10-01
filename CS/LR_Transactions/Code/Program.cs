@@ -8,8 +8,8 @@ struct Program {
         await connect.OpenAsync();
         string tableNumber = $@"
         create table if not exists number(
-        ar1 int,
-        ar2 int
+        ar1 smallint,
+        ar2 smallint
         )";
         await using (SqliteCommand command = new(tableNumber, connect)) {command.ExecuteNonQuery();}
         //await Task.Run(()=>DBfull(connect));
@@ -24,6 +24,7 @@ struct Program {
         }
     }
     async static Task DBfull(SqliteConnection con){
+            var rnd = new Random();
             await con.OpenAsync();
             Parallel.For(0, 1000, async i =>
             {
@@ -32,24 +33,25 @@ struct Program {
             INTO number(ar1, ar2)
             VALUES ($ar1, $ar2)
             ";
-                command.Parameters.AddWithValue("$ar1",new Random().Next(1,9));
-                command.Parameters.AddWithValue("$ar2",new Random().Next(1,10000));
+                command.Parameters.AddWithValue("$ar1",rnd.Next(1,9));
+                command.Parameters.AddWithValue("$ar2",rnd.Next(1,10000));
                 await command.ExecuteNonQueryAsync();
                 command.Parameters.Clear();
             });
     }
     static async Task NoTransaction(SqliteConnection con){
             await con.OpenAsync();
-            Parallel.For(0, 1000, (i)=>
+            Parallel.For(0, 1000, async i =>
             {
             var command = con.CreateCommand();
             command.CommandText = @"
             SELECT *
             FROM number
-            WHERE ar2>1000
-                AND ar2<5000
-                AND ar%7==0;
+            WHERE ar2 > 1000
+                AND ar2 < 5000
+                AND ar2 % 7==0;
             ";
+            await command.ExecuteNonQueryAsync();
             });
     }
     static async Task WithTransaction(SqliteConnection con){
