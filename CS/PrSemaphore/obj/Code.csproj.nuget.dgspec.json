@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "L:\\1mp\\College\\CS\\LR_Transactions\\Code\\Code.csproj": {}
+    "C:\\Users\\user\\Downloads\\Code\\Code.csproj": {}
   },
   "projects": {
-    "L:\\1mp\\College\\CS\\LR_Transactions\\Code\\Code.csproj": {
+    "C:\\Users\\user\\Downloads\\Code\\Code.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "L:\\1mp\\College\\CS\\LR_Transactions\\Code\\Code.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Downloads\\Code\\Code.csproj",
         "projectName": "Code",
-        "projectPath": "L:\\1mp\\College\\CS\\LR_Transactions\\Code\\Code.csproj",
+        "projectPath": "C:\\Users\\user\\Downloads\\Code\\Code.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "L:\\1mp\\College\\CS\\LR_Transactions\\Code\\obj\\",
+        "outputPath": "C:\\Users\\user\\Downloads\\Code\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -42,12 +42,6 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "dependencies": {
-            "Microsoft.Data.Sqlite": {
-              "target": "Package",
-              "version": "[8.0.8, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
