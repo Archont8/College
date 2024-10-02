@@ -35,6 +35,8 @@ class Recursion {
 
 class Program {
     async static Task Main() {
+        var TimeOfProgram = new Stopwatch();
+        TimeOfProgram.Start();
         var sw = new Stopwatch();
         sw.Start();
         Recursion.RecSum();
@@ -50,5 +52,6 @@ class Program {
         table.AddRow("Без Task", TimeNoTask, Recursion.RecSum());
         table.AddRow("С Task", TimeTask, resultTask);
         Console.Write(table.ToString());
+        Console.WriteLine($"\n\nProgram exectuion time: {TimeOfProgram.Elapsed.TotalMilliseconds}");
     }
 }
