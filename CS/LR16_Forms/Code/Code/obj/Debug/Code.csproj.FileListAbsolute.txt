@@ -1,0 +1,10 @@
+C:\Users\user\Downloads\LR16\Code\Code\bin\Debug\Code.exe.config
+C:\Users\user\Downloads\LR16\Code\Code\bin\Debug\Code.exe
+C:\Users\user\Downloads\LR16\Code\Code\bin\Debug\Code.pdb
+C:\Users\user\Downloads\LR16\Code\Code\obj\Debug\Code.csproj.AssemblyReference.cache
+C:\Users\user\Downloads\LR16\Code\Code\obj\Debug\Code.Form1.resources
+C:\Users\user\Downloads\LR16\Code\Code\obj\Debug\Code.Properties.Resources.resources
+C:\Users\user\Downloads\LR16\Code\Code\obj\Debug\Code.csproj.GenerateResource.cache
+C:\Users\user\Downloads\LR16\Code\Code\obj\Debug\Code.csproj.CoreCompileInputs.cache
+C:\Users\user\Downloads\LR16\Code\Code\obj\Debug\Code.exe
+C:\Users\user\Downloads\LR16\Code\Code\obj\Debug\Code.pdb
