@@ -1,4 +1,5 @@
 declare @SecondName nvarchar(50) = 'Иванов';
-SELECT Гость.*
+
+SELECT *
 FROM Гость
 WHERE Гость.Фамилия_гостя = @SecondName;

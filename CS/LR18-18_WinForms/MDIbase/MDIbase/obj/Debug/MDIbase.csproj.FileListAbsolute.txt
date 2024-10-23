@@ -1,0 +1,11 @@
+C:\Users\312-13\source\repos\MDIbase\MDIbase\bin\Debug\MDIbase.exe.config
+C:\Users\312-13\source\repos\MDIbase\MDIbase\bin\Debug\MDIbase.exe
+C:\Users\312-13\source\repos\MDIbase\MDIbase\bin\Debug\MDIbase.pdb
+C:\Users\312-13\source\repos\MDIbase\MDIbase\obj\Debug\MDIbase.csproj.AssemblyReference.cache
+C:\Users\312-13\source\repos\MDIbase\MDIbase\obj\Debug\MDIbase.frmContainer.resources
+C:\Users\312-13\source\repos\MDIbase\MDIbase\obj\Debug\MDIbase.frmChild.resources
+C:\Users\312-13\source\repos\MDIbase\MDIbase\obj\Debug\MDIbase.Properties.Resources.resources
+C:\Users\312-13\source\repos\MDIbase\MDIbase\obj\Debug\MDIbase.csproj.GenerateResource.cache
+C:\Users\312-13\source\repos\MDIbase\MDIbase\obj\Debug\MDIbase.csproj.CoreCompileInputs.cache
+C:\Users\312-13\source\repos\MDIbase\MDIbase\obj\Debug\MDIbase.exe
+C:\Users\312-13\source\repos\MDIbase\MDIbase\obj\Debug\MDIbase.pdb
