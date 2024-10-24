@@ -1,0 +1,31 @@
+﻿  ConsoleApplication1.cpp
+C:\Users\user\Downloads\PR3\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(30,7): error C2535: 'void Program::FillMas(int,int [])': member function already defined or declared
+      C:\Users\user\Downloads\PR3\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(18,7):
+      see declaration of 'Program::FillMas'
+  
+C:\Users\user\Downloads\PR3\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(43,7): error C2535: 'void Program::FillArray(std::array<int,5> &)': member function already defined or declared
+      C:\Users\user\Downloads\PR3\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(19,7):
+      see declaration of 'Program::FillArray'
+  
+C:\Users\user\Downloads\PR3\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(54,7): error C2535: 'void Program::SwapNums(int &,int &)': member function already defined or declared
+      C:\Users\user\Downloads\PR3\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(21,7):
+      see declaration of 'Program::SwapNums'
+  
+C:\Users\user\Downloads\PR3\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(60,7): error C2535: 'void Program::QuickSort(int [],int,int,int &)': member function already defined or declared
+      C:\Users\user\Downloads\PR3\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(20,7):
+      see declaration of 'Program::QuickSort'
+  
+C:\Users\user\Downloads\PR3\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(26,17): error C2079: 'ar' uses undefined class 'std::array<int,5>'
+C:\Users\user\Downloads\PR3\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(48,16): error C2027: use of undefined type 'std::array<int,5>'
+      L:\VisualStudio\VisualStudio2022\VC\Tools\MSVC\14.41.34120\include\utility(144,7):
+      see declaration of 'std::array<int,5>'
+  
+C:\Users\user\Downloads\PR3\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(48,13): error C2530: 'i': references must be initialized
+C:\Users\user\Downloads\PR3\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(48,14): error C2143: syntax error: missing ';' before ':'
+C:\Users\user\Downloads\PR3\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(48,18): error C2143: syntax error: missing ';' before ')'
+C:\Users\user\Downloads\PR3\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(48,16): error C2451: a conditional expression of type 'std::array<int,5>' is not valid
+      C:\Users\user\Downloads\PR3\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(48,16):
+      use of undefined type 'std::array<int,5>'
+      L:\VisualStudio\VisualStudio2022\VC\Tools\MSVC\14.41.34120\include\utility(144,7):
+      see declaration of 'std::array<int,5>'
+  

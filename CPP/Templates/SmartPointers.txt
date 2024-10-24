@@ -1,0 +1,20 @@
+#include <memory>
+
+// Pointer to object that can have only one pointer
+
+unique_ptr<int> a = make_unique<int>(250);
+cout << *a; // значение
+cout << endl;
+cout << a; //  адрес
+
+unique_ptr<int[]> mas1 = make_unique<int[]>(n);
+for (int i = 0; i < n; ++i) {
+	mas1[i] = dist(e);
+}
+
+// Pointer to object that can have many pointers
+
+shared_ptr<int> b = make_shared<int>(252);
+cout << *b; // значение
+cout << endl;
+cout << b; //  адрес
