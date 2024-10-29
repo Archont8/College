@@ -35,4 +35,6 @@ d6e82347-e1c7-4b63-b137-a0ca70732ad5
 {4,"_$Data$_.Unpost",15},
 {5,b16fafdf-66b2-46c8-ab4e-bd8347193afa,"РегистрНакопления.СтоимостьТоваров",9},
 {4,"_$InfoBase$_.DumpStart",16},
-{4,"_$InfoBase$_.DumpFinish",17}
+{4,"_$InfoBase$_.DumpFinish",17},
+{2,"PC-HP3",2},
+{13,2,1}
