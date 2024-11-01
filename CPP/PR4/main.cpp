@@ -8,9 +8,5 @@
 *   сдвига числа.
 */
 
-#include "Vectors.h"
-
-int main()
-{
-    Vectors::Initialize();
-}
+#include "Vectors.h" 
+int main(){Vectors::Initialize();}

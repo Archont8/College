@@ -1,4 +1,0 @@
-﻿  Vectors.cpp
-C:\Users\312-12\Documents\GitHub\College\CPP\PR4\Vectors.cpp(83,29): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
-C:\Users\312-12\Documents\GitHub\College\CPP\PR4\Vectors.cpp(96,29): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
-  PR5.vcxproj -> C:\Users\312-12\Documents\GitHub\College\CPP\PR5\x64\Debug\PR5.exe
