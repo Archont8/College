@@ -2,13 +2,15 @@
 #ifndef VECTORS_H
 #define VECTORS_H
 #include <vector>
+#include <array>
 
-namespace Func {
 	class Vectors
 	{
 	public:
-		void Initialize();
-		void Task17(std::vector<int> ar);
+		static void Initialize();
+	private:
+		static void ArrayAndMasShift(int[], std::array<int, 10>&);
+		static int TransferMas(int[]);
+		static int TransferArray(std::array<int, 10>&);
 	};
-}
 #endif
