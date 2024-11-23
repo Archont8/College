@@ -1,6 +1,0 @@
-﻿  main.cpp
-  Vectors.cpp
-C:\Users\312-12\Documents\GitHub\College\CPP\PR5\code\Vectors.cpp(81,29): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
-C:\Users\312-12\Documents\GitHub\College\CPP\PR5\code\Vectors.cpp(94,29): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
-  Generating Code...
-  code.vcxproj -> C:\Users\312-12\Documents\GitHub\College\CPP\PR5\code\x64\Debug\code.exe
