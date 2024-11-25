@@ -1,11 +1,12 @@
 ﻿using System.Data.SQLite;
+using System.Drawing;
 
 namespace WinFormsApp1
 {
     public partial class Form1 : Form
     {
-        string connect = "Data Source = C:\\Users\\Администратор\\Documents\\GitHub\\College\\CourseWork\\soldiers.db";
-        string pathToFile = "C:\\Soldiers";
+        string connect = "Data Source = C:\\Users\\312-12\\Documents\\GitHub\\College\\CourseWork\\CourseProject\\WinFormsApp1\\WinFormsApp1\\bin\\Debug\\net8.0-windows\\soldiers.db";
+        string pathToFile = "Soldiers";
         public Form1()
         {
             InitializeComponent();
@@ -114,6 +115,8 @@ namespace WinFormsApp1
         }
         async private Task button3_ClickTask()
         {
+            Soldier soldier = new Soldier(textBox1.Text, textBox2.Text, textBox3.Text, textBox4.Text, textBox5.Text, textBox6.Text);
+
             using (var connection = new SQLiteConnection(connect))
             {
                 await connection.OpenAsync();
@@ -125,18 +128,30 @@ namespace WinFormsApp1
                 MilitaryBranch nvarchar (50),
                 Address nvarchar (50),
                 PassportNumber nvarchar (50),
-                PassportSeries nvarchar (50),
+                PassportSeries nvarchar (50)
                 )";
-                using (var command = new SQLiteCommand(createTable, connection))
+                string sql = @"
+                INSERT INTO Soldiers(FIO, ValidityCategory, MilitaryBranch, Address, PassportNumber, PassportSeries)
+                SELECT @FIO, @ValidityCategory, @MilitaryBranch, @Address, @PassportNumber, @PassportSeries
+                ";
+                using (var command = new SQLiteCommand(createTable, connection)) 
+                { 
                     await command.ExecuteNonQueryAsync();
-            }
-            Soldier soldier = new Soldier(textBox1.Text, textBox2.Text, textBox3.Text, textBox4.Text, textBox5.Text, textBox6.Text);
+                }
 
-            string sql = @"
-            INSERT INTO Soldiers(FIO, ValidityCategory, MilitaryBranch, Address, PassportNumber, PassportSeries)
-            SELECT @FIO, @ValidityCategory, @MilitaryBranch, @Address, @PassportNumber, @PassportSeries
-            ";
-            using (var con = new SQLiteConnection(connect))
+                using (var command = new SQLiteCommand(sql, connection))
+                {
+                    command.Parameters.AddWithValue("@FIO", soldier.FIO);
+                    command.Parameters.AddWithValue("@ValidityCategory", soldier.ValidityCategory);
+                    command.Parameters.AddWithValue("@MilitaryBranch", soldier.MilitaryBranch);
+                    command.Parameters.AddWithValue("@Address", soldier.Address);
+                    command.Parameters.AddWithValue("@PassportNumber", soldier.PassportNumber);
+                    command.Parameters.AddWithValue("@PassportSeries", soldier.@PassportSeries);
+                    await command.ExecuteNonQueryAsync();
+                }
+
+            }
+            /*using (var con = new SQLiteConnection(connect))
             {
                 using (var command = new SQLiteCommand(sql, con))
                 {
@@ -148,18 +163,18 @@ namespace WinFormsApp1
                     command.Parameters.AddWithValue("@PassportSeries", soldier.@PassportSeries);
                     await command.ExecuteNonQueryAsync();
                 }
-            }
+            }*/
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            checkedListBox1.Items.Remove(checkedListBox1.SelectedItem);
+            checkedListBox1.Items.Remove(checkedListBox1.SelectedItem!);
         }
         private void button5_Click(object sender, EventArgs e)
         {
             foreach (var x in checkedListBox1.Items)
             {
-                File.AppendAllText(pathToFile, x.ToString());
+                File.AppendAllText(pathToFile, $"{x.ToString()}\n");
             }
 
             MessageBox.Show("Written successfully!");
@@ -173,37 +188,22 @@ namespace WinFormsApp1
 
         private void button7_Click(object sender, EventArgs e)
         {
-            checkedListBox1.Items.Remove(checkedListBox1.SelectedItem);
+            checkedListBox1.Items.Remove(checkedListBox1.SelectedItem!);
         }
 
         private void button9_Click(object sender, EventArgs e)
         {
-            checkedListBox1.Items.Remove(checkedListBox1.SelectedItem);
+            checkedListBox1.Items.Remove(checkedListBox1.SelectedItem!);
         }
 
         private void button10_Click(object sender, EventArgs e)
         {
-            checkedListBox1.Items.Remove(checkedListBox1.SelectedItem);
+            checkedListBox1.Items.Remove(checkedListBox1.SelectedItem!);
         }
 
         private void button8_Click(object sender, EventArgs e)
         {
-            checkedListBox1.Items.Remove(checkedListBox1.SelectedItem);
-        }
-    }
-    public class NodeSorter : System.Collections.IComparer
-    {
-        public int Compare(object x, object y)
-        {
-            TreeNode tx = x as TreeNode;
-            TreeNode ty = y as TreeNode;
-
-            // Compare the length of the strings, returning the difference.
-            if (tx.Text.Length != ty.Text.Length)
-                return tx.Text.Length - ty.Text.Length;
-
-            // If they are the same length, call Compare.
-            return string.Compare(tx.Text, ty.Text);
+            checkedListBox1.Items.Remove(checkedListBox1.SelectedItem!);
         }
     }
 }
