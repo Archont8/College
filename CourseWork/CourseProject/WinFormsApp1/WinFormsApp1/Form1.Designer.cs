@@ -161,7 +161,6 @@
             button6.TabIndex = 19;
             button6.Text = "EXIT";
             button6.UseVisualStyleBackColor = true;
-            button6.Click += button6_Click;
             // 
             // button7
             // 

@@ -1,36 +1,11 @@
 ﻿using System.Data.SQLite;
-using System.IO;
-using static System.Net.Mime.MediaTypeNames;
 
 namespace WinFormsApp1
 {
     public partial class Form1 : Form
     {
-        string connect = "Data Source = C:\\soldiers.db";
+        string connect = "Data Source = C:\\Users\\Администратор\\Documents\\GitHub\\College\\CourseWork\\soldiers.db";
         string pathToFile = "C:\\Soldiers";
-        private void MainForm_Load(object sender, EventArgs e)
-        {
-            if (!File.Exists(pathToFile))
-            {
-                File.Create(pathToFile).Close();
-            }
-            using (var connection = new SQLiteConnection(connect))
-            {
-                connection.Open();
-                string sql = @"
-                CREATE TABLE IF NOT EXISTS Soldiers(
-                id INTEGER NOT NULL PRIMARY KEY, 
-                FIO nvarchar (50),
-                ValidityCategory nvarchar (50),
-                MilitaryBranch nvarchar (50),
-                Address nvarchar (50),
-                PassportNumber nvarchar (50),
-                PassportSeries nvarchar (50),
-                )";
-                using (var command = new SQLiteCommand(sql, connection))
-                    command.ExecuteNonQuery();
-            }
-        }
         public Form1()
         {
             InitializeComponent();
@@ -134,11 +109,32 @@ namespace WinFormsApp1
 
         private void button3_Click(object sender, EventArgs e)
         {
+            Task task = button3_ClickTask();
+            task.Wait();
+        }
+        async private Task button3_ClickTask()
+        {
+            using (var connection = new SQLiteConnection(connect))
+            {
+                await connection.OpenAsync();
+                string createTable = @"
+                CREATE TABLE IF NOT EXISTS Soldiers(
+                id INTEGER NOT NULL PRIMARY KEY, 
+                FIO nvarchar (50),
+                ValidityCategory nvarchar (50),
+                MilitaryBranch nvarchar (50),
+                Address nvarchar (50),
+                PassportNumber nvarchar (50),
+                PassportSeries nvarchar (50),
+                )";
+                using (var command = new SQLiteCommand(createTable, connection))
+                    await command.ExecuteNonQueryAsync();
+            }
             Soldier soldier = new Soldier(textBox1.Text, textBox2.Text, textBox3.Text, textBox4.Text, textBox5.Text, textBox6.Text);
 
             string sql = @"
-            INSERT INTO Soldiers(id, FIO, ValidityCategory, MilitaryBranch, Address, PassportNumber, PassportSeries)
-            SELECT max(id) + 1, @FIO, @ValidityCategory, @MilitaryBranch, @Address, @PassportNumber, @PassportSeries
+            INSERT INTO Soldiers(FIO, ValidityCategory, MilitaryBranch, Address, PassportNumber, PassportSeries)
+            SELECT @FIO, @ValidityCategory, @MilitaryBranch, @Address, @PassportNumber, @PassportSeries
             ";
             using (var con = new SQLiteConnection(connect))
             {
@@ -150,7 +146,7 @@ namespace WinFormsApp1
                     command.Parameters.AddWithValue("@Address", soldier.Address);
                     command.Parameters.AddWithValue("@PassportNumber", soldier.PassportNumber);
                     command.Parameters.AddWithValue("@PassportSeries", soldier.@PassportSeries);
-                    command.ExecuteNonQuery();
+                    await command.ExecuteNonQueryAsync();
                 }
             }
         }
@@ -159,20 +155,20 @@ namespace WinFormsApp1
         {
             checkedListBox1.Items.Remove(checkedListBox1.SelectedItem);
         }
-
         private void button5_Click(object sender, EventArgs e)
         {
-            using (StreamWriter sw = File.AppendText("Soldiers"))
+            foreach (var x in checkedListBox1.Items)
             {
-                sw.WriteLine(checkedListBox1.Items.ToString());
+                File.AppendAllText(pathToFile, x.ToString());
             }
+
             MessageBox.Show("Written successfully!");
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
             File.WriteAllText(pathToFile, "");
-            System.Windows.Forms.Application.Exit();
+            Application.Exit();
         }
 
         private void button7_Click(object sender, EventArgs e)
