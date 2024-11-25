@@ -5,7 +5,7 @@ namespace WinFormsApp1
 {
     public partial class Form1 : Form
     {
-        string connect = "Data Source = C:\\Users\\312-12\\Documents\\GitHub\\College\\CourseWork\\CourseProject\\WinFormsApp1\\WinFormsApp1\\bin\\Debug\\net8.0-windows\\soldiers.db";
+        string connect = "Data Source = soldiers.db";
         string pathToFile = "Soldiers";
         public Form1()
         {
@@ -112,6 +112,7 @@ namespace WinFormsApp1
         {
             Task task = button3_ClickTask();
             task.Wait();
+            MessageBox.Show("Successfully loaded to BD");
         }
         async private Task button3_ClickTask()
         {
