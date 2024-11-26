@@ -3,15 +3,15 @@
   "WorkspaceRootPath": "C:\\Users\\312-12\\Documents\\GitHub\\College\\CourseWork\\CourseProject\\WinFormsApp1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{742F9385-76F4-4671-9ED1-0526C3BCF464}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\312-12\\documents\\github\\college\\coursework\\courseproject\\winformsapp1\\winformsapp1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{742F9385-76F4-4671-9ED1-0526C3BCF464}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{742F9385-76F4-4671-9ED1-0526C3BCF464}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\312-12\\documents\\github\\college\\coursework\\courseproject\\winformsapp1\\winformsapp1\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{742F9385-76F4-4671-9ED1-0526C3BCF464}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{742F9385-76F4-4671-9ED1-0526C3BCF464}|WinFormsApp1\\WinFormsApp1.csproj|C:\\Users\\312-12\\Documents\\GitHub\\College\\CourseWork\\CourseProject\\WinFormsApp1\\winformsapp1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{742F9385-76F4-4671-9ED1-0526C3BCF464}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\312-12\\documents\\github\\college\\coursework\\courseproject\\winformsapp1\\winformsapp1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{742F9385-76F4-4671-9ED1-0526C3BCF464}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{742F9385-76F4-4671-9ED1-0526C3BCF464}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\312-12\\documents\\github\\college\\coursework\\courseproject\\winformsapp1\\winformsapp1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{742F9385-76F4-4671-9ED1-0526C3BCF464}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -30,17 +30,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\312-12\\Documents\\GitHub\\College\\CourseWork\\CourseProject\\WinFormsApp1\\WinFormsApp1\\Form1.cs",
               "RelativeDocumentMoniker": "WinFormsApp1\\Form1.cs",
               "ToolTip": "C:\\Users\\312-12\\Documents\\GitHub\\College\\CourseWork\\CourseProject\\WinFormsApp1\\WinFormsApp1\\Form1.cs",
               "RelativeToolTip": "WinFormsApp1\\Form1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHIAAAA2AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-21T16:48:11.89Z",
               "IsPinned": true,
@@ -58,9 +58,10 @@
               "RelativeDocumentMoniker": "WinFormsApp1\\Program.cs",
               "ToolTip": "C:\\Users\\312-12\\Documents\\GitHub\\College\\CourseWork\\CourseProject\\WinFormsApp1\\WinFormsApp1\\Program.cs",
               "RelativeToolTip": "WinFormsApp1\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T07:45:47.39Z"
+              "WhenOpened": "2024-11-22T07:45:47.39Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -70,19 +71,20 @@
               "RelativeDocumentMoniker": "WinFormsApp1\\Soldier.cs",
               "ToolTip": "C:\\Users\\312-12\\Documents\\GitHub\\College\\CourseWork\\CourseProject\\WinFormsApp1\\WinFormsApp1\\Soldier.cs",
               "RelativeToolTip": "WinFormsApp1\\Soldier.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA0AAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAswBsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T17:55:24.751Z"
+              "WhenOpened": "2024-11-21T17:55:24.751Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Form1.Designer.cs",
               "DocumentMoniker": "C:\\Users\\312-12\\Documents\\GitHub\\College\\CourseWork\\CourseProject\\WinFormsApp1\\WinFormsApp1\\Form1.Designer.cs",
               "RelativeDocumentMoniker": "WinFormsApp1\\Form1.Designer.cs",
               "ToolTip": "C:\\Users\\312-12\\Documents\\GitHub\\College\\CourseWork\\CourseProject\\WinFormsApp1\\WinFormsApp1\\Form1.Designer.cs",
               "RelativeToolTip": "WinFormsApp1\\Form1.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAABQAAAAAAAAAAAAAwCYAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-21T16:45:35.024Z",
               "EditorCaption": ""
