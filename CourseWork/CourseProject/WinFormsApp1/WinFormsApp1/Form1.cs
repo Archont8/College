@@ -1,5 +1,4 @@
 ﻿using System.Data.SQLite;
-using System.Drawing;
 
 namespace WinFormsApp1
 {
@@ -19,65 +18,65 @@ namespace WinFormsApp1
             {
                 if (textBox1.Text.Length == 0 | textBox2.Text.Length == 0 | textBox3.Text.Length == 0 | textBox4.Text.Length == 0 | textBox5.Text.Length == 0 | textBox6.Text.Length == 0)
                 {
-                    throw new Exception("One of the fields is empty!");
+                    throw new Exception("Одно из полей пустое!");
                 }
                 foreach (var x in textBox1.Text)
                 {
                     if (Char.IsDigit(x))
                     {
-                        throw new Exception("Field FIO can't contain digits");
+                        throw new Exception("Поле 'ФИО' не может содержать цифры");
                     }
                     else if (Char.IsControl(x))
                     {
-                        throw new Exception("Field FIO can't contain symbols");
+                        throw new Exception("Поле 'ФИО' не может содержать символы");
                     }
                 }
                 if (textBox2.Text.Length > 1)
                 {
-                    throw new Exception("Field validity category can't contain more than 1 symbol");
+                    throw new Exception("В поле 'категория годности' не может быть более одной буквы");
                 }
                 foreach (var x in textBox2.Text)
                 {
                     if (Char.IsDigit(x))
                     {
-                        throw new Exception("Field validity category can't contain digits");
+                        throw new Exception("В поле 'категория годности' не может быть цифр");
                     }
                     else if (Char.IsControl(x))
                     {
-                        throw new Exception("Field validity category can't contain symbols");
+                        throw new Exception("В поле 'категория годности' не может быть символов");
                     }
                 }
                 foreach (var x in textBox3.Text)
                 {
                     if (Char.IsDigit(x))
                     {
-                        throw new Exception("Field military branch can't contain digits");
+                        throw new Exception("В поле 'род войск' не может быть цифр");
                     }
                     else if (Char.IsControl(x))
                     {
-                        throw new Exception("Field military branch can't contain controls");
+                        throw new Exception("В поле 'род войск' не может быть символов");
                     }
                 }
                 foreach (var x in textBox5.Text)
                 {
                     if (Char.IsLetter(x))
                     {
-                        throw new Exception("Passport number can't contain letters");
+                        throw new Exception("В поле 'номер паспорта' не может быть букв");
                     }
                     if (Char.IsControl(x))
                     {
-                        throw new Exception("Passport number can't contain symbols");
+                        throw new Exception("В поле 'номер паспорта' не может быть символов");
                     }
                 }
                 foreach (var x in textBox6.Text)
                 {
                     if (Char.IsLetter(x))
                     {
-                        throw new Exception("Passport series can't contain letters");
+                        throw new Exception("В поле 'серия паспорта' не может быть букв");
                     }
                     else if (Char.IsControl(x))
                     {
-                        throw new Exception("Passport series can't contain symbols");
+                        throw new Exception("В поле 'серия паспорта' не может быть символов");
                     }
                 }
                 checkedListBox1.Items.Add(text);
@@ -85,7 +84,7 @@ namespace WinFormsApp1
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error! " + ex.Message);
+                MessageBox.Show("Ошибка! " + ex.Message);
             }
         }
 
@@ -99,7 +98,7 @@ namespace WinFormsApp1
                 }
                 else
                 {
-                    throw new Exception("The list is empty, there is nothing to clear");
+                    throw new Exception("Список пуст, очищать нечего");
                 }
             }
             catch (Exception ex)
@@ -112,7 +111,7 @@ namespace WinFormsApp1
         {
             Task task = button3_ClickTask();
             task.Wait();
-            MessageBox.Show("Successfully loaded to BD");
+            MessageBox.Show("Загрузка в БД завершена");
         }
         async private Task button3_ClickTask()
         {
@@ -152,19 +151,6 @@ namespace WinFormsApp1
                 }
 
             }
-            /*using (var con = new SQLiteConnection(connect))
-            {
-                using (var command = new SQLiteCommand(sql, con))
-                {
-                    command.Parameters.AddWithValue("@FIO", soldier.FIO);
-                    command.Parameters.AddWithValue("@ValidityCategory", soldier.ValidityCategory);
-                    command.Parameters.AddWithValue("@MilitaryBranch", soldier.MilitaryBranch);
-                    command.Parameters.AddWithValue("@Address", soldier.Address);
-                    command.Parameters.AddWithValue("@PassportNumber", soldier.PassportNumber);
-                    command.Parameters.AddWithValue("@PassportSeries", soldier.@PassportSeries);
-                    await command.ExecuteNonQueryAsync();
-                }
-            }*/
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -178,7 +164,7 @@ namespace WinFormsApp1
                 File.AppendAllText(pathToFile, $"{x.ToString()}\n");
             }
 
-            MessageBox.Show("Written successfully!");
+            MessageBox.Show("Запись в файл завершена!");
         }
 
         private void button6_Click(object sender, EventArgs e)
