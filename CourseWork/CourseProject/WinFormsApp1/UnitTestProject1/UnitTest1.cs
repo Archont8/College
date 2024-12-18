@@ -20,7 +20,8 @@ namespace UnitTestProject1
         {
             button1_Click();
             Assert.IsTrue(Form1.checkedListBox1.Length == 1);
-
+            button2_Click();
+            Assert.IsTrue(Form1.checkedListBox1.Length == 0);
         }
     }
 }
