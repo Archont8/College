@@ -70,10 +70,6 @@ namespace WinFormsApp1
                 }
                 foreach (var x in textBox6.Text)
                 {
-                    if (Char.IsLetter(x))
-                    {
-                        throw new Exception("В поле 'серия паспорта' не может быть букв");
-                    }
                     else if (Char.IsControl(x))
                     {
                         throw new Exception("В поле 'серия паспорта' не может быть символов");
@@ -152,10 +148,14 @@ namespace WinFormsApp1
 
             }
         }
+        private void removeSelectedItem() {
+            checkedListBox1.Items.Remove(checkedListBox1.SelectedItem!);
+            checkedListBox1.SelectedItem = null;
+        }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            checkedListBox1.Items.Remove(checkedListBox1.SelectedItem!);
+            removeSelectedItem();
         }
         private void button5_Click(object sender, EventArgs e)
         {
@@ -175,22 +175,22 @@ namespace WinFormsApp1
 
         private void button7_Click(object sender, EventArgs e)
         {
-            checkedListBox1.Items.Remove(checkedListBox1.SelectedItem!);
+            removeSelectedItem();
         }
 
         private void button9_Click(object sender, EventArgs e)
         {
-            checkedListBox1.Items.Remove(checkedListBox1.SelectedItem!);
+            removeSelectedItem();
         }
 
         private void button10_Click(object sender, EventArgs e)
         {
-            checkedListBox1.Items.Remove(checkedListBox1.SelectedItem!);
+            removeSelectedItem();
         }
 
         private void button8_Click(object sender, EventArgs e)
         {
-            checkedListBox1.Items.Remove(checkedListBox1.SelectedItem!);
+            removeSelectedItem();
         }
     }
 }
