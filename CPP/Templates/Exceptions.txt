@@ -1,9 +1,0 @@
-// Your own exception class
-
-class NameOfClassException {
-public: 
-    NameOfClassException(string message) : message{ message } {}
-    string getMessage() const { return message; }
-private: 
-    string message;
-};
