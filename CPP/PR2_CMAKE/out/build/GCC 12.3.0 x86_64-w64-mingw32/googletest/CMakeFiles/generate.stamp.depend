@@ -1,0 +1,4 @@
+# CMake generation dependency list for this directory.
+L:/1mp/College/CPP/PR2_CMAKE/googletest/CMakeLists.txt
+L:/CMake/share/cmake-3.31/Modules/CMakeDependentOption.cmake
+L:/CMake/share/cmake-3.31/Modules/GNUInstallDirs.cmake

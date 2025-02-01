@@ -13,5 +13,13 @@
                 "CMAKE_BUILD_TYPE": "Debug"
             }
         }
+    ],
+    "testPresets": [
+        {
+            "name": "Test1",
+            "description": "",
+            "displayName": "",
+            "configurePreset": "GCC 12.3.0 x86_64-w64-mingw32"
+        }
     ]
 }
