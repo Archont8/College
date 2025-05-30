@@ -1,0 +1,1 @@
+select pt.products_type, sum(p.minimum_cost_for_partner * pp.products_amount) as resultcost from product_type pt inner join products p on pt.product_type_id = p.product_type_id join partner_products pp on pp.products_id = p.products_id group by pt.products_type order by resultcost desc

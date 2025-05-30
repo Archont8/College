@@ -1,0 +1,1 @@
+select p.partners_id, p.partner_name, sum(pp.products_amount * pr.minimum_cost_for_partner * pt.product_type_coefficient) as total_sales_amount from Partners p join Partner_products pp ON p.partners_id = pp.partners_id join Products pr ON pp.products_id = pr.products_id join Product_type pt ON pr.product_type_id = pt.product_type_id group by p.partners_id, p.partner_name
